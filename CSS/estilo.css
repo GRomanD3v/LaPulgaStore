@@ -1,11 +1,25 @@
-
 .container {
-  background-color: rgb(255, 255, 255); 
+  background-color: rgb(255, 255, 255);
 }
-.nav{
+.nav {
   background-color: rgb(0, 0, 0);
-  
 }
-p{
-  padding:20px;
+p {
+  padding: 20px;
+}
+.list-no-bullets {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+.list-no-bullets li {
+    text-align: center;
+}
+.feature-item {
+    background-color: #f8f9fa; 
+    transition: transform 0.2s ease-in-out; 
+}
+.feature-item:hover {
+    transform: translateY(-5px);
 }
