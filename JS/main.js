@@ -1,53 +1,36 @@
-
 function mostrarFecha() {
-
     let fecha = new Date();
-    let dias = ["Domningo", "Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado"];
-    let meses = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];  
+    let dias = ["Domingo", "Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado"];
+    let meses = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"]; 
 
     const diaSemana = dias[fecha.getDay()];
     const dia = fecha.getDate();
     const mes = meses[fecha.getMonth()];
     const anio = fecha.getFullYear();
-    const horas = fecha.getHours();
-    const minutos = fecha.getMinutes();
-    const segundos = fecha.getSeconds();
+    
+    const horas = String(fecha.getHours()).padStart(2, '0');
+    const minutos = String(fecha.getMinutes()).padStart(2, '0');
 
-    let mensaje = `Hoy es ${diaSemana} ${dia} de ${mes} de ${anio}, y son las ${horas} horas, ${minutos} minutos con ${segundos} segundos.`;
+    let mensaje = `Hoy es ${diaSemana} ${dia} de ${mes} de ${anio}, y son las ${horas}:${minutos}.`;
     document.querySelector("#timer").innerText = mensaje;
-
 }
 
-document.addEventListener("DOMContentLoaded", () => { mostrarFecha();});
+document.addEventListener("DOMContentLoaded", () => {
+    // Inicia el reloj una vez que el DOM está listo
+    setInterval(mostrarFecha, 1000);
 
-document.getElementById("Tecnología").addEventListener("click", function () {
-  Swal.fire({
-    title: "¡Pronto!",
-    text: "Atento a las novedades",
-    icon: "info"
-  });
-});
-
-document.getElementById("Música").addEventListener("click", function () {
-  Swal.fire({
-    title: "¡Pronto!",
-    text: "Atento a las novedades",
-    icon: "info"
-  });
-});
-
-document.getElementById("Accesorios").addEventListener("click", function () {
-  Swal.fire({
-    title: "¡Pronto!",
-    text: "Atento a las novedades",
-    icon: "info"
-  });
-});
-
-document.getElementById("Juegos").addEventListener("click", function () {
-  Swal.fire({
-    title: "¡Pronto!",
-    text: "Atento a las novedades",
-    icon: "info"
-  });
+    // Botones con SweetAlert
+    const categorias = ["Tecnología", "Música", "Accesorios", "Juegos"];
+    categorias.forEach(id => {
+        const boton = document.getElementById(id);
+        if (boton) {
+            boton.addEventListener("click", () => {
+                Swal.fire({
+                    title: "¡Pronto!",
+                    text: "Atento a las novedades",
+                    icon: "info"
+                });
+            });
+        }
+    });
 });

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="CSS/estilo.css">
 </head>
 <body>
-    <header class="bg-white text-white text-center py-0 animate__animated animate__bounce">
+    <header class="bg-white text-dark text-center py-0 animate__animated animate__bounce">
     <img src="./IMG/Pulga_Pulga-removebg.png" height="200">
      <nav class="navbar navbar-expand-lg bg-body-secondary">
        <div class="container-fluid">
@@ -18,8 +18,8 @@
         </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav mx-auto">
-        <a class="nav-link active" aria-current="page" href="index.html">INICIO</a>
-        <a class="nav-link" href="#">PRODUCTOS</a>
+        <a class="nav-link"  href="index.html">INICIO</a>
+        <a class="nav-link active" aria-current="page" href="#">PRODUCTOS</a>
         <a class="nav-link" href="contacto.html">CONTACTO</a>
       </div>
       </div>
@@ -37,8 +37,7 @@
         </div>
 
         <div class="row justify-content-center">
-            <div class="col-12"></div>
-
+          <div class="col-12 col-sm-6 col-lg-3 d-flex justify-content-center mb-4">
             <div class="card" style="width: 17rem;">
                 <img src="IMG/escritorio-con-ssd-y-laptop-vista-superior.jpg" class="card-img-top mt-4" alt="Aparatos de tecnología">
                 <div class="card-body" >
@@ -47,8 +46,9 @@
                     <!-- Ejemplos de productos: notebook, smartwatch, cargador inalámbrico, tablet  -->
                     <a href="#" id="Tecnología" class="btn btn-secondary ver-productos">Ver productos</a>
                 </div>
+             </div>
             </div>
-
+            <div class="col-12 col-sm-6 col-lg-3 d-flex justify-content-center mb-4">
             <div class="card" style="width: 17rem;">
                 <img src="IMG/conjunto-de-musica-de-dvd-de-vista-superior.jpg" class="card-img-top mt-4" alt="Artículos de música">
                 <div class="card-body">
@@ -58,7 +58,9 @@
                     <a href="#" id="Música" class="btn btn-secondary ver-productos">Ver productos</a>
                 </div>
             </div>
+          </div>
 
+          <div class="col-12 col-sm-6 col-lg-3 d-flex justify-content-center mb-4">
             <div class="card" style="width: 17rem;">
                 <img src="IMG/arreglo-de-coleccion-estacionaria-moderna.jpg" class="card-img-top mt-4" alt="Accesorios tecnológicos">
                 <div class="card-body">
@@ -68,7 +70,9 @@
                     <a href="#" id="Accesorios" class="btn btn-secondary ver-productos">Ver productos</a>
                 </div>
             </div>
-
+          </div>
+        
+          <div class="col-12 col-sm-6 col-lg-3 d-flex justify-content-center mb-4">
             <div class="card" style="width: 17rem;">
                 <img src="IMG/equipo-de-realidad-virtual.jpg" class="card-img-top mt-4" alt="Equipo de realidad virtual">
                 <div class="card-body">
@@ -78,6 +82,7 @@
                     <a href="#" id="Juegos" class="btn btn-secondary ver-productos">Ver productos</a>
                 </div>
             </div>
+          </div>
 
         </div>
        </div>
@@ -94,3 +99,4 @@
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="JS/main.js"></script>
 </body>
+</html>
