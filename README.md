@@ -39,6 +39,7 @@ LaPulgaStore/
 ├── productos.html
 
 ├── README.md
+
 ## Authors
 
 - [@mt-dafonte](https://www.github.com/mt-dafonte) Maria Teresa de la Fuente
@@ -46,6 +47,9 @@ LaPulgaStore/
 - [@roesvi](https://www.github.com/roesvi) Roberto Escobar 
 - [@StevsVP](https://www.github.com/StevsVP) Esteban Varela 
 
+## Ruta del repositorio:
+
+https://github.com/GRomanD3v/LaPulgaStore
 
 ## License
 
