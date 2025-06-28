@@ -20,4 +20,34 @@ function mostrarFecha() {
 
 document.addEventListener("DOMContentLoaded", () => { mostrarFecha();});
 
-Swal.fire("Formulario en mantención!");
+document.getElementById("Tecnología").addEventListener("click", function () {
+  Swal.fire({
+    title: "¡Pronto!",
+    text: "Atento a las novedades",
+    icon: "info"
+  });
+});
+
+document.getElementById("Música").addEventListener("click", function () {
+  Swal.fire({
+    title: "¡Pronto!",
+    text: "Atento a las novedades",
+    icon: "info"
+  });
+});
+
+document.getElementById("Accesorios").addEventListener("click", function () {
+  Swal.fire({
+    title: "¡Pronto!",
+    text: "Atento a las novedades",
+    icon: "info"
+  });
+});
+
+document.getElementById("Juegos").addEventListener("click", function () {
+  Swal.fire({
+    title: "¡Pronto!",
+    text: "Atento a las novedades",
+    icon: "info"
+  });
+});
